@@ -1,0 +1,1 @@
+A simple Reverse Madlibs script. To run type "example.rb sample.txt" in your terminal.
