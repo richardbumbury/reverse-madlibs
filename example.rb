@@ -1,5 +1,5 @@
 def get_words_from_file(file_name)
-  if !File.exists?(file_name)
+  unless File.exist?(file_name)
     say "#{file_name} doesn't exist!"
     return
   end
@@ -18,7 +18,7 @@ dictionary = {
   verbs: verbs,
   adjectives: adjectives
 }
-  def say(msg)
+def say(msg)
   puts("=> #{msg}")
 end
 
@@ -27,8 +27,8 @@ def exit_with(msg)
   exit
 end
 
-exit_with("No input file!") if ARGV.empty?
-exit_with("File doesn't exist!") if !File.exists?(ARGV[0])
+exit_with('No input file!') if ARGV.empty?
+exit_with('File doesn\'t exist!') unless File.exist?(ARGV[0])
 
 contents = File.open(ARGV[0], 'r') do |f|
   f.read

@@ -1,1 +1,1 @@
-A simple Reverse Madlibs script. To run type "example.rb sample.txt" in your terminal.
+A simple Reverse Madlibs script. To run type "ruby example.rb sample.txt" into your terminal.
